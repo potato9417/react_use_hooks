@@ -7,6 +7,7 @@ const Navigator=()=>{
             <h1 id="logo">Using Hooks</h1>
             <Link to="/">Home</Link>
             <Link to="/usestate">Usestate</Link>
+            <Link to="/useeffect">useeffect</Link>
         </nav>
     )
 }

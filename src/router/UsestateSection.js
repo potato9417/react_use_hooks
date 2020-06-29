@@ -1,9 +1,9 @@
 import React from "react";
 import UsestateNav from "../components/UsestateNav"
 import { BrowserRouter, Route} from "react-router-dom";
-import Usestate from "./Usestate"
-import Useinput from "./Useinput"
-import Usetab from "./Usetab"
+import Usestate from "./usestate/Usestate"
+import Useinput from "./usestate/Useinput"
+import Usetab from "./usestate/Usetab"
 
 
 const UsestateSection=()=>{
