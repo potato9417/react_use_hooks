@@ -8,6 +8,7 @@ const Navigator=()=>{
             <Link to="/">Home</Link>
             <Link to="/usestate">Usestate</Link>
             <Link to="/useinput">Use Input</Link>
+            <Link to="/usetab">Use Tab</Link>
         </nav>
     )
 }

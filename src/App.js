@@ -4,6 +4,7 @@ import Main from "./router/Main"
 import Usestate from "./router/Usestate"
 import Navigator from "./components/Navigator"
 import Useinput from "./router/Useinput";
+import Usetab from './router/Usetab';
 
 const App=()=>{
   return (
@@ -12,6 +13,7 @@ const App=()=>{
       <Route path="/" exact={true} component={Main} />
       <Route path="/usestate" component={Usestate}/>
       <Route path="/useinput" component={Useinput} />
+      <Route patth="/usetab" component={Usetab} />
     </BrowserRouter>
   );
 }
