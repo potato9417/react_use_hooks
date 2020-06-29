@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 const Usestate=()=>{
-    const [item, setItem] = useState(1);
+    const [item, setItem] = useState(0);
     const plus=()=>{
         setItem(item+1)
     }
