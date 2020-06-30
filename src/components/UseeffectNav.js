@@ -8,6 +8,7 @@ const UseeffectNav=()=>{
             <Link to="/useeffect">Use Effect</Link>
             <Link to="/useeffect/usetitle">Use Title</Link>
             <Link to="/useeffect/useclick">Use Click</Link>
+            <Link to="/useeffect/usehover">Use Hover</Link>
         </nav>
     )
 }
