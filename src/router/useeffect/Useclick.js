@@ -10,7 +10,7 @@ const useClick = (onClick=>{
             element.current.addEventListener("click",onClick)
         }
         return ()=>{
-            if(element.current){
+            if(!element.current){
                 element.current.removeEventListner("click",onClick)
             }
         }

@@ -10,7 +10,7 @@ const useHover = (onHover=>{
             element.current.addEventListener("mouseenter",onHover)
         }
         return ()=>{
-            if(element.current){
+            if(!element.current){
                 element.current.removeEventListner("mouseenter",onHover)
             }
         }
