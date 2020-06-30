@@ -5,6 +5,8 @@ import Useeffect from "./useeffect/Useeffect"
 import Usetitle from "./useeffect/Usetitle"
 import Useclick from "./useeffect/Useclick"
 import Usehover from "./useeffect/Usehover"
+import Useconfirm from "./useeffect/Useconfirm"
+import Usepreventleave from "./useeffect/Usepreventleave"
 
 
 const UsestateSection=()=>{
@@ -16,6 +18,8 @@ const UsestateSection=()=>{
             <Route path="/useeffect/usetitle" component={Usetitle}/>
             <Route path="/useeffect/useclick" component={Useclick}/>
             <Route path="/useeffect/usehover" component={Usehover}/>
+            <Route path="/useeffect/useconfirm" component={Useconfirm}/>
+            <Route path="/useeffect/usepreventleave" component={Usepreventleave}/>
         </BrowserRouter>
     )
 }
