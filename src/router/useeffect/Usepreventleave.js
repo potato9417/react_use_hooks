@@ -6,7 +6,7 @@ const usePreventLeave=()=>{
         event.returnValue=""
     }
     const enablePrevent=()=>{window.addEventListener("beforeunload",listener)}
-    const disenablePrevent=()=>{window.addEventListener("beforeunload",listener)}
+    const disenablePrevent=()=>{window.removeEventListener("beforeunload",listener)}
 
     return {enablePrevent,disenablePrevent}
 }
