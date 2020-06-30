@@ -1,7 +1,12 @@
 import React, { useEffect } from "react"
 
 const useBeforeLeave=(onBefore)=>{
-    const handle = ()=>{console.log("leave!")}
+    const handle = (event)=>{
+        console.log(event.clientY)
+        const {clientY}=event
+
+        if(clientY<=0) { onBefore()}
+    }
 
     useEffect(()=>{
         console.log(typeof onBefore)
