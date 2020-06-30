@@ -11,6 +11,7 @@ const UseeffectNav=()=>{
             <Link to="/useeffect/usehover">Use Hover</Link>
             <Link to="/useeffect/useconfirm">Use Confirm</Link>
             <Link to="/useeffect/usepreventleave">Use Prevent Leave</Link>
+            <Link to="/useeffect/usebeforeleave">Use Before Leave</Link>
         </nav>
     )
 }
