@@ -11,9 +11,9 @@ const UsestateSection=()=>{
         <BrowserRouter className="container">
             <h3>USESTATE</h3>
             <UsestateNav />
-            <Route path="/" exact={true} component={Usestate} />
-            <Route path="/useinput" component={Useinput} />
-            <Route path="/usetab" component={Usetab} />
+            <Route path="/usestate" exact={true} component={Usestate} />
+            <Route path="/usestate/useinput" component={Useinput} />
+            <Route path="/usestate/usetab" component={Usetab} />
         </BrowserRouter>
     )
 }
