@@ -9,6 +9,11 @@ import Useconfirm from "./useeffect/Useconfirm"
 import Usepreventleave from "./useeffect/Usepreventleave"
 import Usebeforeleave from "./useeffect/Usebeforeleave"
 import Usefadein from "./useeffect/Usefadein";
+import Usenetwork from "./useeffect/Usenetwork";
+import Usefullscreen from "./useeffect/Usefullscreen";
+import Usenotification from "./useeffect/Usenotification"
+import Useaxios from "./useeffect/Useaxios"
+import Usescroll from "./useeffect/Usescroll"
 
 
 const UsestateSection=()=>{
@@ -24,6 +29,11 @@ const UsestateSection=()=>{
             <Route path="/useeffect/usepreventleave" component={Usepreventleave}/>
             <Route path="/useeffect/usebeforeleave" component={Usebeforeleave}/>
             <Route path="/useeffect/usefadein" component={Usefadein}/>
+            <Route path="/useeffect/usenetwork" component={Usenetwork}/>
+            <Route path="/useeffect/usefullscreen" component={Usefullscreen}/>
+            <Route path="/useeffect/usenotification" component={Usenotification}/>
+            <Route path="/useeffect/usescroll" component={Usescroll}/>
+            <Route path="/useeffect/useaxios" component={Useaxios}/>
         </BrowserRouter>
     )
 }
