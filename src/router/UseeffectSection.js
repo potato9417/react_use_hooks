@@ -8,6 +8,7 @@ import Usehover from "./useeffect/Usehover"
 import Useconfirm from "./useeffect/Useconfirm"
 import Usepreventleave from "./useeffect/Usepreventleave"
 import Usebeforeleave from "./useeffect/Usebeforeleave"
+import Usefadein from "./useeffect/Usefadein";
 
 
 const UsestateSection=()=>{
@@ -22,6 +23,7 @@ const UsestateSection=()=>{
             <Route path="/useeffect/useconfirm" component={Useconfirm}/>
             <Route path="/useeffect/usepreventleave" component={Usepreventleave}/>
             <Route path="/useeffect/usebeforeleave" component={Usebeforeleave}/>
+            <Route path="/useeffect/usefadein" component={Usefadein}/>
         </BrowserRouter>
     )
 }
