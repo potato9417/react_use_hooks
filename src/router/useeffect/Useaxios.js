@@ -6,10 +6,12 @@ const useAxios=(option,axiosInstance=defaultAxios)=>{
         loading:true, error:null, data:null
     })
     // console.log("state:  ",state)
-    if(!option.url){
-        return
-    }
+    
     useEffect(()=>{
+        if(!option.url){
+            return
+        }
+        
         axiosInstance(option)
             .then(data=>{
                 setState({
