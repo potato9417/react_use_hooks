@@ -7,6 +7,17 @@ const useAxios=(option,axiosInstance=defaultAxios)=>{
     })
     // console.log("state:  ",state)
     
+    const [trigger,setTrigger]=useState(0)
+
+    const refetch=()=>{
+        console.log("clcik")
+        setState({
+            ...state,
+            loading:true
+        })
+        setTrigger(Date.now())
+    }
+
     useEffect(()=>{
         if(!option.url){
             return
@@ -23,16 +34,19 @@ const useAxios=(option,axiosInstance=defaultAxios)=>{
             .catch(error=>{
                 setState({...state,loading:false,error})
             })
-    },[])
-    return state
+    },[trigger])
+    return {...state,refetch}
 }
 
 const Useaxios=()=>{
-    const {loading,error,data} = useAxios({url:"https://yts.am.api/v2/list_movies.json"})
-    console.log(`Loading : ${loading}\nError : ${error}\nData : ${data}`)
+    const {loading,error,data,refetch} = useAxios({url:"https://yts-proxy.now.sh/list_movies.json"})
+    console.log(`Loading : ${loading}\nError : ${error}\nData : ${JSON.stringify(data)}`)
     return(
         <div className="container">
             <h3>Useaxios</h3>
+            <p>{loading&&"Loading"}</p>
+            <p>{data &&data.status}</p>
+            <button onClick={refetch}>Refetch</button>
         </div>
     )
 }
