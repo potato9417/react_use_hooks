@@ -1,4 +1,5 @@
 import React from "react"
+// import defaultAxios from "axios";
 
 const Useaxios=()=>{
     return(
