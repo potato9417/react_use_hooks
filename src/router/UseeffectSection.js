@@ -19,7 +19,6 @@ import Usescroll from "./useeffect/Usescroll"
 const UsestateSection=()=>{
     return (
         <BrowserRouter className="container">
-            <h3>USEEFFECT</h3>
             <UseeffectNav />
             <Route path="/useeffect" exact={true} component={Useeffect} />
             <Route path="/useeffect/usetitle" component={Usetitle}/>

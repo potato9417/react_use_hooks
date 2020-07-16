@@ -42,6 +42,9 @@ a {
 }
 
 /* Main page */
+#main {
+    text-align: left;
+}
 #main h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -61,6 +64,7 @@ a {
 .container {
     width: 1100px;
     margin: auto;
+    text-align: center;
 }
 
 /* usestateNav */
@@ -71,10 +75,29 @@ a {
 }
 #usestateGnb a,#useeffectGnb a {
     display: inline-block;
-    font-size: 2rem;
-    padding: 0 30px;
-    margin: 5px 20px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+    margin: 10px 20px;
 }
 #usestateGnb a:hover,#useeffectGnb a:hover {
     color: rgb(253, 193, 81);
+}
+
+/* router */
+
+.container h3 {
+    margin: 50px 0 100px;
+    font-size: 3rem;
+}
+.container button {
+    border: 1px solid rgb(253, 193, 81);
+    background-color: transparent;
+    padding: 10px 30px;
+    margin: 40px 10px;
+    outline: none;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: rgb(253, 193, 81);
+    color: #fff;
 }
