@@ -19,13 +19,12 @@ const useClick = (onClick=>{
 })
 
 const Useclick=()=>{
-    const sayHello=()=>{console.log("hi")}
+    const sayHello=()=>{alert("click")}
     const title = useClick(sayHello)
     return(
         <div className="container">
             <h3>Useclick</h3>
             <button ref={title}>click me!</button>
-            {click.map(props=>{return <p>{props}</p>})}
         </div>
     )
 }

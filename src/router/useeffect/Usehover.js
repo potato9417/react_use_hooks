@@ -19,12 +19,12 @@ const useHover = (onHover=>{
 })
 
 const Usehover=()=>{
-    const sayHello=()=>{console.log("hi")}
+    const sayHello=()=>{alert("hover")}
     const title = useHover(sayHello)
     return(
         <div className="container">
             <h3>Usehover</h3>
-            <p ref={title}>Mouse Enter!</p>
+            <p className="hover" ref={title}>Mouse Enter!</p>
         </div>
     )
 }
