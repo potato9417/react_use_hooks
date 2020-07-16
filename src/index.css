@@ -1,0 +1,80 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    color: #333;
+    background-color: rgb(255, 249, 242);
+    width: 1400px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 50px 0;
+    display: inline-block;
+}
+#gnb {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-left: 150px;
+}
+#gnb a {
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    width: 170px;
+    margin: 0 20px;
+}
+#gnb a:hover {
+    font-weight: 900;
+    color: rgb(253, 193, 81);
+    border-bottom: 3px solid rgb(255, 211, 130);
+}
+
+/* Main page */
+#main h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 30px 0 70px;
+}
+#main h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+#main p {
+    width: 900px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+/* usestateNav */
+#usestateGnb,#useeffectGnb {
+    text-align: center;
+    width: 1300px;
+    margin: auto;
+}
+#usestateGnb a,#useeffectGnb a {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 30px;
+    margin: 5px 20px;
+}
+#usestateGnb a:hover,#useeffectGnb a:hover {
+    color: rgb(253, 193, 81);
+}

@@ -9,7 +9,6 @@ import Usetab from "./usestate/Usetab"
 const UsestateSection=()=>{
     return (
         <BrowserRouter className="container">
-            <h3>USESTATE</h3>
             <UsestateNav />
             <Route path="/usestate" exact={true} component={Usestate} />
             <Route path="/usestate/useinput" component={Useinput} />
