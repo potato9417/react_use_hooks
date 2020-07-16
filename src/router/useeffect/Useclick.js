@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from "react"
+import React,{useState,useEffect,useRef} from "react"
 
 const useClick = (onClick=>{
     const element = useRef();
@@ -25,6 +25,7 @@ const Useclick=()=>{
         <div className="container">
             <h3>Useclick</h3>
             <button ref={title}>click me!</button>
+            {click.map(props=>{return <p>{props}</p>})}
         </div>
     )
 }

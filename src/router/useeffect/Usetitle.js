@@ -18,6 +18,7 @@ const Usetitle=()=>{
     return(
         <div className="container">
             <h3>usetitle</h3>
+            <p>기다리면 타이틀이 변경됩니다~</p>
         </div>
     )
 }
